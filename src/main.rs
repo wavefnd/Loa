@@ -1,5 +1,4 @@
-use std::{env, fs, process, process::Command};
-use std::path::Path;
+use std::{env, fs, process};
 use colorex::Colorize;
 use codegen::Interpreter;
 use lexer::Lexer;
@@ -13,14 +12,14 @@ fn main() {
     if args.len() < 2 {
         eprintln!("{} {}",
                   "Usage:".color("255,71,71"),
-                  "wave <command> [arguments]");
+                  "loa <command> [arguments]");
 
         eprintln!("{}",
                   "Commands:".color("145,161,2"));
 
         eprintln!("  {}    {}",
                   "run <file>".color("38,139,235"),
-                  "Execute the specified Wave file");
+                  "Execute the specified Loa file");
 
         eprintln!("  {}     {}",
                   "--version".color("38,139,235"),

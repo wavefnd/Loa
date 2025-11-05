@@ -1,5 +1,5 @@
 #[derive(Debug)]
-pub enum WaveErrorKind {
+pub enum LoaErrorKind {
     UnexpectedToken(String),
     ExpectedToken(String),
     UnexpectedChar(char),
@@ -7,8 +7,8 @@ pub enum WaveErrorKind {
 }
 
 #[derive(Debug)]
-pub struct WaveError {
-    pub kind: WaveErrorKind,
+pub struct LoaError {
+    pub kind: LoaErrorKind,
     pub message: String,
     pub file: String,
     pub line: usize,
@@ -17,8 +17,8 @@ pub struct WaveError {
     pub label: Option<String>,
 }
 
-impl WaveError {
-    pub fn new(kind: WaveErrorKind, message: impl Into<String>, file: impl Into<String>, line: usize, column: usize) -> Self {
+impl LoaError {
+    pub fn new(kind: LoaErrorKind, message: impl Into<String>, file: impl Into<String>, line: usize, column: usize) -> Self {
         Self {
             kind,
             message: message.into(),

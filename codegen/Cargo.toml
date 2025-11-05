@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-lexer = { path = "../lexer" }
-parser = { path = "../parser" }
-error = { path = "../error" }
+lexer = { path = "../front/lexer" }
+parser = { path = "../front/parser" }
+error = { path = "../front/error" }

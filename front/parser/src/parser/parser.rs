@@ -1,9 +1,8 @@
 use std::collections::HashSet;
 use std::iter::Peekable;
 use std::slice::Iter;
-use regex::Regex;
 use ::lexer::*;
-use error::{WaveError, WaveErrorKind};
+use error::{LoaError, LoaErrorKind};
 use parser::ast::*;
 use crate::*;
 use crate::parser::format::*;
@@ -309,8 +308,8 @@ fn skip_whitespace(tokens: &mut Peekable<Iter<Token>>) {
 fn parse_if(tokens: &mut Peekable<Iter<Token>>) -> Option<ASTNode> {
     if tokens.peek()?.token_type != TokenType::Lparen {
         let token = tokens.peek().unwrap();
-        WaveError::new(
-            WaveErrorKind::ExpectedToken("(".to_string()),
+        LoaError::new(
+            LoaErrorKind::ExpectedToken("(".to_string()),
             "Expected '(' after 'if'".to_string(),
             "unknown",
             token.line,
