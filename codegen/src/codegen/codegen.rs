@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 use parser::ast::*;
-use ::error::{WaveError, WaveErrorKind};
+use ::error::{LoaError, LoaErrorKind};
 
 pub struct Interpreter {
     pub variables: HashMap<String, Value>,
@@ -71,8 +71,8 @@ impl Interpreter {
                                 executed = true;
                                 break;
                             } else if let Some(inner_else_block) = inner_else_block {
-                                let warning = WaveError::new(
-                                    WaveErrorKind::SyntaxError("Unused else block".to_string()),
+                                let warning = LoaError::new(
+                                    LoaErrorKind::SyntaxError("Unused else block".to_string()),
                                     "Warning: An else block inside an else-if was ignored",
                                     "unknown",
                                     0,
