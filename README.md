@@ -10,13 +10,11 @@
 > **Warning:**  
 > The official version of this project has not yet been released. The first version will be distributed as v0.0.1.
 
-![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/LunaStev/Loa?style=for-the-badge&logo=github?utm_source=oss&utm_medium=github&utm_campaign=LunaStev%2FWave&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+![Latest version](https://img.shields.io/github/v/release/wavefnd/Loa?style=for-the-badge&include_prereleases)
 
-![Latest version](https://img.shields.io/github/v/release/LunaStev/Loa?style=for-the-badge&include_prereleases)
-
-![Code size](https://img.shields.io/github/languages/code-size/LunaStev/Loa?style=for-the-badge&logo=github)
-![Downloads](https://img.shields.io/github/downloads/LunaStev/Loa/total?color=%2324cc24&style=for-the-badge&logo=github)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/LunaStev/Loa/rust.yml?logo=rust&style=for-the-badge&branch=master)
+![Code size](https://img.shields.io/github/languages/code-size/wavefnd/Loa?style=for-the-badge&logo=github)
+![Downloads](https://img.shields.io/github/downloads/wavefnd/Loa/total?color=%2324cc24&style=for-the-badge&logo=github)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/wavefnd/Loa/rust.yml?logo=rust&style=for-the-badge&branch=master)
 
 ---
 
@@ -100,7 +98,7 @@ If you find Loa useful, please consider sponsoring us!
 
 ## Cool graphs
 
-[![Star History Chart](https://api.star-history.com/svg?repos=LunaStev/Loa&type=Date)](https://star-history.com/#LunaStev/Loa&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=wavefnd/Loa&type=Date)](https://star-history.com/#wavefnd/Loa&Date)
 
 ---
 
