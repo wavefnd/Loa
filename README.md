@@ -104,4 +104,4 @@ If you find Loa useful, please consider sponsoring us!
 
 ## LICENSE
 
-Loa is released under the [MPL-2.0 License](LICENSE).
+Loa is released under the [LSD License](LICENSE).
