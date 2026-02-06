@@ -47,13 +47,15 @@ fn main() {
         "repl" => repl_mode(),
         "help" => {
             println!("{}", "Options:".color("145,161,2"));
-            println!("      {}\n      {}\n      {}\n",
+            println!("      {}      {}",
                      "run <file>".color("38,139,235"),
-                     "repl".color("38,139,235"),
                      "Run the Loa code.");
+            println!("      {}         {}",
+                     "repl".color("38,139,235"),
+                     "Start interactive mode.");
 
             println!("{}", "Commands:".color("145,161,2"));
-            println!("      {}\n      {}\n",
+            println!("      {}      {}\n",
                      "-V, --version".color("38,139,235"),
                      "Verified the version of the Loa interpreter.");
             return;
